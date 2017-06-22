@@ -17,10 +17,13 @@ Alexa のパチもんみたいなのを作るときに結構悩むのが
 
 yagrec [-D dev] [-m margin_in_second] [-t threshold(0-32767)]
 
-  - dev         device name (e.g. hw:1,0)
-  - margin      recording margin BEFORE sound exisits  
-            音がなった瞬間から遡って録音する秒数
-  - threshold   threshold level of sound
+  - dev  
+    device name (e.g. hw:1,0)
+  - margin  
+    recording margin BEFORE sound exisits  
+    音がなった瞬間から遡って録音する秒数
+  - threshold  
+    threshold level of sound
 
 
   - A wave format data is output through **STDOUT**.
