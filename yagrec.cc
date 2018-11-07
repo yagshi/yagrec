@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
 
   cerr << "ready\n";
   // main loop
-  for (ptrCur = 0, recState = eWAIT;
+  for (ptrCur = 0, recState = eWAIT, cnt1shot = 0;
        recState != eFINISH;
        ptrCur = (ptrCur + 1) % (rate * MAX_REC_SECOND)) {
     if (cnt1shot > 0) cnt1shot--;
